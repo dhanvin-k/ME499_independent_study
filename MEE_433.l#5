@@ -285,22 +285,20 @@ package type P</description>
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;CONN_08&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="1.VDD" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2.3.3V" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3.GND" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4.B2" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5.B3" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6.SDO" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7.CS" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8.INT2" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="1." x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2." x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3." x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4." x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5." x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6." x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7." x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="8." x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="0" y="7.747" size="0.6096" layer="25" font="vector" ratio="20">&gt;IMU</text>
 <pad name="9.INT1" x="20.32" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<dimension x1="-1.27" y1="-1.27" x2="21.59" y2="-1.27" x3="10.16" y3="-5.08" textsize="1.27" layer="21" unit="inch"/>
 <wire x1="-1.27" y1="8.89" x2="21.59" y2="8.89" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="8.89" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="21.59" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="21.59" y1="-1.27" x2="21.59" y2="8.89" width="0.127" layer="21"/>
-<dimension x1="21.59" y1="8.89" x2="21.59" y2="-1.27" x3="24.13" y3="3.81" textsize="1.27" layer="21" unit="inch"/>
 </package>
 <package name="USB-MB-H">
 <description>&lt;b&gt;USB Series Mini-B Hole Mounted&lt;/b&gt;</description>
@@ -11239,16 +11237,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </gates>
 <devices>
 <device name="" package="IMU">
-<connects>
-<connect gate="G$1" pin="1" pad="1.VDD"/>
-<connect gate="G$1" pin="2" pad="2.3.3V"/>
-<connect gate="G$1" pin="3" pad="3.GND"/>
-<connect gate="G$1" pin="4" pad="4.B2"/>
-<connect gate="G$1" pin="5" pad="5.B3"/>
-<connect gate="G$1" pin="6" pad="6.SDO"/>
-<connect gate="G$1" pin="7" pad="7.CS"/>
-<connect gate="G$1" pin="8" pad="8.INT2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -16096,6 +16084,17 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </gates>
 <devices>
 <device name="" package="IMU">
+<connects>
+<connect gate="G$1" pin="1.VDD" pad="1."/>
+<connect gate="G$1" pin="2.VIN" pad="2."/>
+<connect gate="G$1" pin="3.GND" pad="3."/>
+<connect gate="G$1" pin="4.SDA" pad="4."/>
+<connect gate="G$1" pin="5.SCL" pad="5."/>
+<connect gate="G$1" pin="6.SDO" pad="6."/>
+<connect gate="G$1" pin="7.CS" pad="7."/>
+<connect gate="G$1" pin="8.INT2" pad="8."/>
+<connect gate="G$1" pin="9.INT1" pad="9.INT1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
