@@ -8462,6 +8462,12 @@ package type P</description>
 <wire x1="6.35" y1="8.89" x2="-6.35" y2="8.89" width="0.127" layer="21"/>
 <text x="-6.35" y="10.16" size="1.27" layer="21">&gt;&gt;DRV8835</text>
 </package>
+<package name="HC-08">
+<pad name="1.VCC" x="0" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="2.GND" x="0" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="3.TX" x="0" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="4.RX" x="0" y="-3.81" drill="1.016" diameter="1.8796"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="R0402" urn="urn:adsk.eagle:package:23547/2" type="box">
@@ -11013,6 +11019,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="12.AENABLE" x="7.62" y="-5.08" length="middle" rot="R180"/>
 <pin name="13.APHASE" x="7.62" y="-7.62" length="middle" rot="R180"/>
 <pin name="14.MODE" x="7.62" y="-10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="HC-08">
+<pin name="1.VCC" x="2.54" y="2.54" length="middle" rot="R180"/>
+<pin name="2.GND" x="2.54" y="0" length="middle" rot="R180"/>
+<pin name="3.TX" x="2.54" y="-2.54" length="middle" rot="R180"/>
+<pin name="4.RX" x="2.54" y="-5.08" length="middle" rot="R180"/>
+<wire x1="0" y1="-7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16097,6 +16113,24 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="HC-08">
+<gates>
+<gate name="G$1" symbol="HC-08" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="HC-08">
+<connects>
+<connect gate="G$1" pin="1.VCC" pad="1.VCC"/>
+<connect gate="G$1" pin="2.GND" pad="2.GND"/>
+<connect gate="G$1" pin="3.TX" pad="3.TX"/>
+<connect gate="G$1" pin="4.RX" pad="4.RX"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="led" urn="urn:adsk.eagle:library:259">
@@ -18151,6 +18185,7 @@ Source: www.kingbright.com</description>
 <part name="GND19" library="MEE_433" deviceset="GND" device=""/>
 <part name="+3V7" library="MEE_433" deviceset="+3V3" device=""/>
 <part name="+3V10" library="MEE_433" deviceset="+3V3" device=""/>
+<part name="U$11" library="MEE_433" deviceset="HC-08" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18339,6 +18374,7 @@ Source: www.kingbright.com</description>
 <instance part="+3V10" gate="G$1" x="208.28" y="40.64" smashed="yes">
 <attribute name="VALUE" x="205.74" y="35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="U$11" gate="G$1" x="152.4" y="33.02" smashed="yes"/>
 </instances>
 <busses>
 </busses>

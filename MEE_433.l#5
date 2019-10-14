@@ -294,7 +294,7 @@ package type P</description>
 <pad name="7." x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="8." x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="0" y="7.747" size="0.6096" layer="25" font="vector" ratio="20">&gt;IMU</text>
-<pad name="9.INT1" x="20.32" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="9." x="20.32" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <wire x1="-1.27" y1="8.89" x2="21.59" y2="8.89" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="8.89" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="21.59" y2="-1.27" width="0.127" layer="21"/>
@@ -16093,7 +16093,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="6.SDO" pad="6."/>
 <connect gate="G$1" pin="7.CS" pad="7."/>
 <connect gate="G$1" pin="8.INT2" pad="8."/>
-<connect gate="G$1" pin="9.INT1" pad="9.INT1"/>
+<connect gate="G$1" pin="9.INT1" pad="9."/>
 </connects>
 <technologies>
 <technology name=""/>
