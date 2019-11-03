@@ -1,0 +1,20 @@
+Partlist exported from C:/Users/Owner/Documents/GitHub/ME499_independent_study/Airhockeypuck.sch at 11/3/2019 5:17 PM
+
+Qty Value           Device          Package      Parts          Description                          POPULARITY SPICEPREFIX
+4   0.1uF           C-US025-025X050 C025-025X050 C1, C2, C3, C4 CAPACITOR, American symbol                      C          
+2   10k             R-US_0207/10    0207/10      R3, R4         RESISTOR, American symbol                       R          
+2   10uF            CPOL-USB45181B  B45181B      C5, C6         POLARIZED CAPACITOR, American symbol            C          
+2   330             R-US_0207/10    0207/10      R1, R2         RESISTOR, American symbol                       R          
+1   8MHz            OSC             OSC          U$9                                                                       
+2   DRV8835         DRV8835         DRV8835      U$6, U$7                                                                  
+1   Green           LED3MM          LED3MM       LED2           LED                                  97                    
+1   HC-08           HC-08           HC-08        U$11                                                                      
+1   IMU             IMU             IMU          U$10                                                                      
+1   MCP1702         MCP1702         TO92         U$3                                                                       
+1   PIC32MX250F128B PIC32MX250F128B DIL28-3      U$1                                                                       
+1   PICKIT3         PICKIT3         1X05         U$8                                                                       
+1   RESET           PB              PB           U$5                                                                       
+1   Red             LED3MM          LED3MM       LED1           LED                                  97                    
+1   SLIDE           SLIDE           SLIDE        U$2                                                                       
+1   USB-MB-H        USB-MB-H        USB-MB-H     J1             USB Connectors                                             
+1   USER            PB              PB           U$4                                                                       

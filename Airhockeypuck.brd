@@ -185,6 +185,7 @@
 <text x="-12.192" y="11.938" size="1.778" layer="21">Devdhark
 Dhanvink
 MEE499</text>
+<circle x="0" y="1.27" radius="39.502103125" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="MEE_433">
