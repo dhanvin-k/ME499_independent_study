@@ -18709,11 +18709,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="B4/USER" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="11.B4"/>
-<wire x1="15.24" y1="25.4" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
-<label x="2.54" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="U$4" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
@@ -18721,17 +18716,10 @@ Source: www.kingbright.com</description>
 <junction x="99.06" y="0"/>
 <label x="88.9" y="0" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="A4/LED" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="12.A4"/>
-<wire x1="15.24" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
-<label x="2.54" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="157.48" y1="109.22" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
-<label x="157.48" y="116.84" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="11.B4"/>
+<wire x1="15.24" y1="25.4" x2="2.54" y2="25.4" width="0.1524" layer="91"/>
+<label x="2.54" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USBID" class="0">
@@ -18843,6 +18831,11 @@ Source: www.kingbright.com</description>
 <wire x1="187.96" y1="0" x2="205.74" y2="0" width="0.1524" layer="91"/>
 <label x="203.2" y="0" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="157.48" y1="109.22" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
+<label x="157.48" y="116.84" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D+" class="0">
 <segment>
@@ -18870,6 +18863,11 @@ Source: www.kingbright.com</description>
 <pinref part="U$7" gate="G$1" pin="12."/>
 <wire x1="187.96" y1="2.54" x2="205.74" y2="2.54" width="0.1524" layer="91"/>
 <label x="203.2" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="12.A4"/>
+<wire x1="15.24" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="91"/>
+<label x="2.54" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
