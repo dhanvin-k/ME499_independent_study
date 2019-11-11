@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -8477,7 +8477,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <vertex x="-3.05" y="-2.475"/>
 </polygon>
 </package>
-<package name="HBRIGDE">
+<package name="DRV8835">
 <pad name="1.GND" x="-5.08" y="7.62" drill="1.016" diameter="1.8796"/>
 <pad name="2.VIN" x="-5.08" y="5.08" drill="1.016" diameter="1.8796"/>
 <pad name="3.BOUT2" x="-5.08" y="2.54" drill="1.016" diameter="1.8796"/>
@@ -8485,18 +8485,24 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pad name="5.AOUT2" x="-5.08" y="-2.54" drill="1.016" diameter="1.8796"/>
 <pad name="6.AOUT1" x="-5.08" y="-5.08" drill="1.016" diameter="1.8796"/>
 <pad name="7.VMM" x="-5.08" y="-7.62" drill="1.016" diameter="1.8796"/>
-<pad name="7.GND" x="5.08" y="7.62" drill="1.016" diameter="1.8796"/>
-<pad name="2.VCC" x="5.08" y="5.08" drill="1.016" diameter="1.8796"/>
-<pad name="3.BENABLE" x="5.08" y="2.54" drill="1.016" diameter="1.8796"/>
-<pad name="4.BPHASE" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
-<pad name="5.AENABLE" x="5.08" y="-2.54" drill="1.016" diameter="1.8796"/>
-<pad name="6.APHASE" x="5.08" y="-5.08" drill="1.016" diameter="1.8796"/>
-<pad name="7.MODE" x="5.08" y="-7.62" drill="1.016" diameter="1.8796"/>
+<pad name="8.GND" x="5.08" y="7.62" drill="1.016" diameter="1.8796"/>
+<pad name="9.VCC" x="5.08" y="5.08" drill="1.016" diameter="1.8796"/>
+<pad name="10.BENABLE" x="5.08" y="2.54" drill="1.016" diameter="1.8796"/>
+<pad name="11.BPHASE" x="5.08" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="12.AENABLE" x="5.08" y="-2.54" drill="1.016" diameter="1.8796"/>
+<pad name="13.APHASE" x="5.08" y="-5.08" drill="1.016" diameter="1.8796"/>
+<pad name="14.MODE" x="5.08" y="-7.62" drill="1.016" diameter="1.8796"/>
 <wire x1="-6.35" y1="8.89" x2="-6.35" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="-6.35" y1="-8.89" x2="6.35" y2="-8.89" width="0.127" layer="21"/>
 <wire x1="6.35" y1="-8.89" x2="6.35" y2="8.89" width="0.127" layer="21"/>
 <wire x1="6.35" y1="8.89" x2="-6.35" y2="8.89" width="0.127" layer="21"/>
 <text x="-6.35" y="10.16" size="1.27" layer="21">&gt;&gt;DRV8835</text>
+</package>
+<package name="HC-08">
+<pad name="1.VCC" x="0" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="2.GND" x="0" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="3.TX" x="0" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="4.RX" x="0" y="-3.81" drill="1.016" diameter="1.8796"/>
 </package>
 </packages>
 <packages3d>
@@ -11055,7 +11061,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-10.16" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
 </symbol>
-<symbol name="H-BRIDGE">
+<symbol name="DRV8835">
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-12.7" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
@@ -11074,6 +11080,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="12.AENABLE" x="7.62" y="-5.08" length="middle" rot="R180"/>
 <pin name="13.APHASE" x="7.62" y="-7.62" length="middle" rot="R180"/>
 <pin name="14.MODE" x="7.62" y="-10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="HC-08">
+<pin name="1.VCC" x="2.54" y="2.54" length="middle" rot="R180"/>
+<pin name="2.GND" x="2.54" y="0" length="middle" rot="R180"/>
+<pin name="3.TX" x="2.54" y="-2.54" length="middle" rot="R180"/>
+<pin name="4.RX" x="2.54" y="-5.08" length="middle" rot="R180"/>
+<wire x1="0" y1="-7.62" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16135,6 +16151,52 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connect gate="G$1" pin="7.CS" pad="7."/>
 <connect gate="G$1" pin="8.INT2" pad="8."/>
 <connect gate="G$1" pin="9.INT1" pad="9."/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8835">
+<gates>
+<gate name="G$1" symbol="DRV8835" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRV8835">
+<connects>
+<connect gate="G$1" pin="1.GND" pad="1.GND"/>
+<connect gate="G$1" pin="10.BENABLE" pad="10.BENABLE"/>
+<connect gate="G$1" pin="11.BPHASE" pad="11.BPHASE"/>
+<connect gate="G$1" pin="12.AENABLE" pad="12.AENABLE"/>
+<connect gate="G$1" pin="13.APHASE" pad="13.APHASE"/>
+<connect gate="G$1" pin="14.MODE" pad="14.MODE"/>
+<connect gate="G$1" pin="2.VIN" pad="2.VIN"/>
+<connect gate="G$1" pin="3.BOUT2" pad="3.BOUT2"/>
+<connect gate="G$1" pin="4.BOUT1" pad="4.BOUT1"/>
+<connect gate="G$1" pin="5.AOUT2" pad="5.AOUT2"/>
+<connect gate="G$1" pin="6.AOUT1" pad="6.AOUT1"/>
+<connect gate="G$1" pin="7.VMM" pad="7.VMM"/>
+<connect gate="G$1" pin="8.GND" pad="8.GND"/>
+<connect gate="G$1" pin="9.VCC" pad="9.VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HC-08">
+<gates>
+<gate name="G$1" symbol="HC-08" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="HC-08">
+<connects>
+<connect gate="G$1" pin="1.VCC" pad="1.VCC"/>
+<connect gate="G$1" pin="2.GND" pad="2.GND"/>
+<connect gate="G$1" pin="3.TX" pad="3.TX"/>
+<connect gate="G$1" pin="4.RX" pad="4.RX"/>
 </connects>
 <technologies>
 <technology name=""/>
